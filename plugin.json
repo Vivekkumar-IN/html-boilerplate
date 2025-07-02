@@ -1,0 +1,20 @@
+{
+  "id": "Advanced_html_boilerplate",
+  "name": "HTML5 Boilerplate",
+  "main": "main.js",
+  "version": "1.0.0",
+  "readme": "readme.md",
+  "icon": "icon.png",
+  "files": ["main.js", "boilerplate.js", "plugin.json", "readme.md", "icon.png"],
+  "minVersionCode": 290,
+  "license": "MIT",
+  "changelogs": "changelogs.md",
+  "keywords": ["html", "boilerplate", "template", "snippet"],
+  "price": 0,
+  "author": {
+    "name": "Buids",
+    "email": "x.com/only_buids",
+    "github": "Buids",
+    "permissions": ["editor"]
+  }
+}
