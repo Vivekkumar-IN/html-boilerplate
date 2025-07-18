@@ -1,19 +1,10 @@
-function boilerplate(bodyContent = "        <!-- Start building your page here -->\n") {
+function boilerplate(bodyContent = "") {
     return `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A new web page">
-    <meta name="robots" content="index, follow">
-    <link rel="icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        /* Minimal CSS Reset */
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: system-ui, sans-serif; background: #fafbfc; color: #222; min-height: 100vh; line-height: 1.6; }
-    </style>
 </head>
 <body>
 ${bodyContent}

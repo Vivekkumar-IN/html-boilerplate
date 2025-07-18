@@ -14,7 +14,7 @@ class ActionBarHtmlBoilerplate {
     this.retryCount = options.retryCount || 20;
     this.retryDelay = options.retryDelay || 300; // ms
     this.selectionMenuId = "html5-boilerplate-selection";
-    this.selectionMenuLabel = options.selectionMenuLabel || "<!> HTML5 Boilerplate";
+    this.selectionMenuLabel = options.selectionMenuLabel || "<!>";
     this.selectionMenuType = "all";
     this.isSelectionMenuAdded = false;
   }
@@ -130,22 +130,11 @@ class ActionBarHtmlBoilerplate {
     });
   }
 
-  addAboutMenu() {
-    // Optionally add a menu item in the selection menu for About
-    const selectionMenu = acode.require("selectionMenu");
-    if (!selectionMenu) return;
-    selectionMenu.add(
-      this.showAboutDialog.bind(this),
-      "About HTML5 Boilerplate",
-      "all"
-    );
-  }
 
   async init() {
     this.tryInjectButton();
     this.addSelectionMenu();
     this.addBoilerplateCommand();
-    this.addAboutMenu();
   }
 
   async destroy() {
